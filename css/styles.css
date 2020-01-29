@@ -4,8 +4,8 @@
 /* and above unless overwritten below */
 
 body {
-  background: #fcc;
-} 
+  background: #862d86;
+}
 
 
 
@@ -14,10 +14,10 @@ body {
 @media screen and (min-width: 500px) {
 
   /* applies to screens wider than 499px */
-  
+
   body {
-    background: #cfc;
-  } 
+    background: #862d86;
+  }
 }
 
 
@@ -29,6 +29,16 @@ body {
   /* applies to screens wider than 999px */
 
   body {
-    background: #ccf;
-  } 
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    image-align: center;
+    background: #862d86;
+  }
+
+  .navigation-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
