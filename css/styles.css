@@ -5,9 +5,26 @@
 
 body {
   background: #862d86;
+  margin: auto;
+  text-align: center;
 }
 
+.navigation-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 60%;
+  flex-wrap: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+img.dota-logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
 
 /* TABLET STYLES */
 
@@ -17,6 +34,15 @@ body {
 
   body {
     background: #862d86;
+    margin: auto;
+    text-align: center;
+  }
+
+  .navigation-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
   }
 }
 
@@ -29,16 +55,15 @@ body {
   /* applies to screens wider than 999px */
 
   body {
-    max-width: 1000px;
+    background: #862d86;
     margin: auto;
     text-align: center;
-    image-align: center;
-    background: #862d86;
   }
 
   .navigation-menu{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
   }
 }
