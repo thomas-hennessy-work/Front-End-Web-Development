@@ -4,7 +4,6 @@
 /* and above unless overwritten below */
 
 body {
-  background: #862d86;
   margin: auto;
   text-align: center;
 }
@@ -28,12 +27,40 @@ h1{
   margin-right: auto;
 }
 
-img.dota-logo{
+img.logo{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
 }
+
+div.Moving_images{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: auto;
+  height: 100%;
+}
+
+img.dog1{
+  display: block;
+  width: 10%;
+  height: 10%;
+}
+
+img.dog2{
+  display: block;
+  width: 10%;
+  height: 10%;
+}
+
+img.dog3{
+  display: block;
+  width: 10%;
+  height: 10%;
+}
+
+
 
 /* TABLET STYLES */
 
@@ -42,7 +69,6 @@ img.dota-logo{
   /* applies to screens wider than 499px */
 
   body {
-    background: #862d86;
     margin: auto;
     text-align: center;
   }
@@ -64,7 +90,6 @@ img.dota-logo{
   /* applies to screens wider than 999px */
 
   body {
-    background: #862d86;
     margin: auto;
     text-align: center;
   }
