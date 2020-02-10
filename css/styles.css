@@ -42,10 +42,38 @@ div.Moving_images{
   height: 100%;
 }
 
-img.dog1{
+#dog1{
+  transition: transform 3s;
   display: block;
   width: 10%;
   height: 10%;
+}
+
+#dog2{
+  display: block;
+  width: 10%;
+  height: 10%;
+}
+
+#dog3{
+  display: block;
+  width: 10%;
+  height: 10%;
+}
+
+#dog1:focus{
+transform: translate(2000px);
+}
+
+/*img.dog1{
+  display: block;
+  width: 10%;
+  height: 10%;
+}
+
+img.dog1.leftTranslate{
+  position: absolute;
+  right: -100px;
 }
 
 img.dog2{
@@ -58,7 +86,7 @@ img.dog3{
   display: block;
   width: 10%;
   height: 10%;
-}
+}*/
 
 
 
