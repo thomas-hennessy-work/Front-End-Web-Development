@@ -9,13 +9,14 @@ body {
 }
 
 h1{
-  background-color: #39373b;
-  color: white;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  font-size: 350%;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2%;
+  margin-top: 0%;
+  margin-bottom: 8%;
 }
 
-.navigation-menu{
+/*.navigation-menu{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -25,7 +26,7 @@ h1{
   flex-wrap: nowrap;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 /*img.logo{
   position: relative;
@@ -37,7 +38,8 @@ h1{
 body{
   background: url("../images/Dota-2-Logo.png");
   background-repeat: no-repeat;
-  background-position: top -10% center;
+  background-position: top center;
+  background-size: width: 300%;
 }
 
 div.Moving_images{
@@ -48,28 +50,20 @@ div.Moving_images{
   height: 100%;
 }
 
-#Location{
-  transition: transform 3s;
+.navImage{
+  transition: filter 0.5s;
   position: relative;
   display: block;
   width: 25%;
+  filter: grayscale(100%);
 }
 
-#team{
-  transition: transform 3s;
-  display: block;
-  width: 25%;
-}
-
-#game{
-  display: block;
-  width: 25%;
+.navImage:hover{
+  filter: grayscale(0%);
 }
 
 .alternateStyle{
 /*transform: translate(2000px);*/
-position: absolute;
-left: 10000px;
 visibility: hidden;
 }
 

@@ -1,5 +1,11 @@
-document.getElementsById("Location").addEventListener("click", image1_click);
+const Location = document.getElementsById('Location');
+const Team = document.getElementsById('team');
 
-function image1_click(){
-  document.getElementsById("team").classList.add('alternateStyle');
+const image1_click = () => {
+  for(i in Team) {
+    Team[i].classList.toggle("alternateStyle");
+  }
+  document.getElementsById("team").classList.toggle('alternateStyle');
 }
+
+Location.addEventListener("click", image1_click);
