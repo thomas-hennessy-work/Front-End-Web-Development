@@ -1,11 +1,13 @@
-const Location = document.getElementsById('Location');
-const Team = document.getElementsById('team');
+const arena = document.getElementById('Location');
+const team = document.getElementById('team');
+const game = document.getElementById('game');
 
-const image1_click = () => {
-  for(i in Team) {
-    Team[i].classList.toggle("alternateStyle");
-  }
-  document.getElementsById("team").classList.toggle('alternateStyle');
+const arena_click = () => {
+  team.style.transition = "all 2s";
+  game.style.transition = "all 2s";
+  arena.classList.toggle("Location-click-location");
+  team.classList.toggle("Location-click-team");
+  game.classList.toggle("Location-click-game");
 }
 
-Location.addEventListener("click", image1_click);
+arena.addEventListener("click", arena_click);

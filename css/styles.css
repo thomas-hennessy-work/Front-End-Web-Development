@@ -16,25 +16,6 @@ h1{
   margin-bottom: 8%;
 }
 
-/*.navigation-menu{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  background-color: #39373b;
-  color: white;
-  flex-wrap: nowrap;
-  margin-left: auto;
-  margin-right: auto;
-}*/
-
-/*img.logo{
-  position: relative;
-  display: block;
-  width: 100%;
-  z-index: -1;
-}*/
-
 body{
   background: url("../images/Dota-2-Logo.png");
   background-repeat: no-repeat;
@@ -62,35 +43,23 @@ div.Moving_images{
   filter: grayscale(0%);
 }
 
-.alternateStyle{
-/*transform: translate(2000px);*/
-visibility: hidden;
-}
-
-/*img.dog1{
-  display: block;
-  width: 10%;
-  height: 10%;
-}
-
-img.dog1.leftTranslate{
+.Location-click-location{
+  filter: grayscale(0%);
   position: absolute;
-  right: -100px;
+  left: 10%;
 }
 
-img.dog2{
-  display: block;
-  width: 10%;
-  height: 10%;
+.Location-click-team{
+  transition: transform 2s;
+  position: absolute;
+  transform: translate(400%);
 }
 
-img.dog3{
-  display: block;
-  width: 10%;
-  height: 10%;
-}*/
-
-
+.Location-click-game{
+  transition: transform 2s;
+  position: absolute;
+  transform: translate(400%);
+}
 
 /* TABLET STYLES */
 
