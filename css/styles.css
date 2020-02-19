@@ -31,12 +31,19 @@ div.Moving_images{
   height: 100%;
 }
 
-.navImage{
+.Location_Navigation{
   transition: filter 0.5s;
   position: relative;
   display: block;
-  width: 25%;
+  width: 100%;
+}
+
+.navImage{
+  transition: filter 0.5s;
+  position: relative;
+  width: 50%;
   filter: grayscale(100%);
+  margin: 0px;
 }
 
 .navImage:hover{
@@ -44,22 +51,18 @@ div.Moving_images{
 }
 
 .Location-click-location{
+  transition: all;
   filter: grayscale(0%);
   position: absolute;
-  left: 10%;
+  transform: translate(-145%, -30%);
 }
 
-.Location-click-team{
-  transition: transform 2s;
+.Location-click-others{
+  transition: transform;
   position: absolute;
   transform: translate(400%);
 }
 
-.Location-click-game{
-  transition: transform 2s;
-  position: absolute;
-  transform: translate(400%);
-}
 
 /* TABLET STYLES */
 
