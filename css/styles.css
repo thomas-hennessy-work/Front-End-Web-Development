@@ -68,16 +68,24 @@ div.Moving_images{
 /*  Styles used for when an icon has been clicked*/
 /*Item being effected - effect - item changing*/
 
+/*Images moving right*/
+.click-right{
+  transition: transform;
+  position: absolute;
+  transform: translate(400%);
+}
+
+.click-left{
+  transition: transform;
+  position: absolute;
+  transform: translate(-400%);
+}
+
+
 /*Transitions on Location click*/
 .Location-click-location{
   transition: filter;
   filter: grayscale(0%);
-}
-
-.Location-click-others{
-  transition: transform;
-  position: absolute;
-  transform: translate(400%);
 }
 
 .Location-click-more_info{
@@ -98,10 +106,34 @@ div.Moving_images{
   opacity: 1;
 }
 
+
 /*Transitions on Team click*/
 .Team-click-team{
-  transition: filter;
   filter: grayscale(0%);
+  transform: translate(-135%);
+}
+
+.Team-click-more_info{
+  transition: opacity 1.5s;
+  transition-delay: 2s;
+  opacity: 1;
+  background-color: black;
+  color: white;
+}
+
+.Team-click-container{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.Team-click-discription{
+  transition: opacity 1.5s;
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+
+.Team-click-location-discription{
+  display: none;
 }
 
 /* TABLET STYLES */
