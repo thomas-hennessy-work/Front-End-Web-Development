@@ -5,22 +5,22 @@
 
 body {
   margin: auto;
-  text-align: center;
 }
 
 h1{
-  font-size: 350%;
+  font-size: 300%;
   font-family: Arial, Helvetica, sans-serif;
   padding: 2%;
   margin-top: 0%;
   margin-bottom: 8%;
+  text-align: center;
 }
 
 body{
   background: url("../images/Dota-2-Logo.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 350%;
+  background-size: 300%;
 }
 
 div.Moving_images{
@@ -28,20 +28,19 @@ div.Moving_images{
   flex-direction: row;
   justify-content: space-around;
   width: auto;
-  padding-left: 5%
+  padding-left: 9%;
 }
 
 .Location_Navigation{
   transition: filter 0.5s;
   position: relative;
-  display: flex;
-  flex-direction: row;
-  width: 200%;
+  display: block;
+  width: 100%;
 }
 
 .navImage{
   transition: filter 0.5s;
-  width: 75%;
+  width: 70%;
   filter: grayscale(100%);
 }
 
@@ -56,11 +55,20 @@ div.Moving_images{
   padding: 2%;
 }
 
+.discription{
+  margin-left: 2%;
+  margin-right: 10%;
+}
+
+.discription_text{
+  opacity: 0;
+}
+
 
 /*  Styles used for when an icon has been clicked*/
+/*Item being effected - effect - item changing*/
 
-
-/*What item has been affected - what has been done to it - what is changing*/
+/*Transitions on Location click*/
 .Location-click-location{
   transition: filter;
   filter: grayscale(0%);
@@ -82,6 +90,18 @@ div.Moving_images{
 
 .Location-click-container{
   display: flex;
+}
+
+.Location-click-discription{
+  transition: opacity 1.5s;
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+
+/*Transitions on Team click*/
+.Team-click-team{
+  transition: filter;
+  filter: grayscale(0%);
 }
 
 /* TABLET STYLES */
