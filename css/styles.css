@@ -20,7 +20,7 @@ body{
   background: url("../images/Dota-2-Logo.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: width: 300%;
+  background-size: 350%;
 }
 
 div.Moving_images{
@@ -28,33 +28,42 @@ div.Moving_images{
   flex-direction: row;
   justify-content: space-around;
   width: auto;
-  height: 100%;
+  padding-left: 5%
 }
 
 .Location_Navigation{
   transition: filter 0.5s;
   position: relative;
-  display: block;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 200%;
 }
 
 .navImage{
   transition: filter 0.5s;
-  position: relative;
-  width: 50%;
+  width: 75%;
   filter: grayscale(100%);
-  margin: 0px;
 }
 
 .navImage:hover{
   filter: grayscale(0%);
 }
 
+.more_info{
+  opacity: 0;
+  height: 20%;
+  white-space: nowrap;
+  padding: 2%;
+}
+
+
+/*  Styles used for when an icon has been clicked*/
+
+
+/*What item has been affected - what has been done to it - what is changing*/
 .Location-click-location{
-  transition: all;
+  transition: filter;
   filter: grayscale(0%);
-  position: absolute;
-  transform: translate(-145%, -30%);
 }
 
 .Location-click-others{
@@ -63,6 +72,17 @@ div.Moving_images{
   transform: translate(400%);
 }
 
+.Location-click-more_info{
+  transition: opacity 1.5s;
+  transition-delay: 0.3s;
+  opacity: 1;
+  background-color: black;
+  color: white;
+}
+
+.Location-click-container{
+  display: flex;
+}
 
 /* TABLET STYLES */
 
