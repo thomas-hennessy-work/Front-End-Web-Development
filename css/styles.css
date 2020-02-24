@@ -96,7 +96,7 @@ div.Moving_images{
 /*Making the more information link appear*/
 .more-info-appear{
   transition: opacity 1.5s;
-  transition-delay: 2s;
+  transition-delay: 1.5s;
   opacity: 1;
   background-color: black;
   color: white;
@@ -118,6 +118,7 @@ div.Moving_images{
   filter: grayscale(0%);
   transform: translate(-195%);
 }
+
 
 /* TABLET STYLES */
 
