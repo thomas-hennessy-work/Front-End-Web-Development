@@ -26,8 +26,8 @@ const arena_click = () => {
   arena.classList.toggle("Location-click-location");
   team.classList.toggle("click-right");
   game.classList.toggle("click-right");
-  arena_more.classList.toggle("Location-click-more_info");
-  location_discription.classList.toggle('Location-click-discription');
+  arena_more.classList.toggle("more-info-appear");
+  location_discription.classList.toggle('appear-discription');
 }
 
 const team_click = () => {
@@ -37,8 +37,8 @@ const team_click = () => {
   team_container.classList.toggle("Team-click-team");
   arena.classList.toggle("click-left");
   game.classList.toggle("click-right");
-  team_more.classList.toggle("Team-click-more_info");
-  team_discription.classList.toggle('Team-click-discription');
+  team_more.classList.toggle("more-info-appear");
+  team_discription.classList.toggle('appear-discription');
   location_discription.classList.toggle('remove-discription');
 }
 
@@ -49,8 +49,8 @@ const game_click = () => {
   game_container.classList.toggle("Game-click-game");
   arena.classList.toggle("click-left");
   team.classList.toggle("click-left");
-  game_more.classList.toggle("Game-click-more_info");
-  game_discritpion.classList.toggle("Team-click-discription");
+  game_more.classList.toggle("more-info-appear");
+  game_discritpion.classList.toggle("appear-discription");
   location_discription.classList.toggle('remove-discription');
   team_discription.classList.toggle('remove-discription');
 }
