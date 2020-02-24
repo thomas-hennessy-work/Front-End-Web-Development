@@ -15,6 +15,10 @@ const team_more = document.getElementById('Team_more');
 const team_container = document.getElementById('Team_container')
 const team_discription = document.getElementById('Team_discription');
 
+const game_more = document.getElementById('Game_more');
+const game_container = document.getElementById('Game_container');
+const game_discritpion = document.getElementById('Game_discription');
+
 const arena_click = () => {
   //ask how to put the transitions for both ways in to css
   team.style.transition = "all 2s";
@@ -23,22 +27,34 @@ const arena_click = () => {
   team.classList.toggle("click-right");
   game.classList.toggle("click-right");
   arena_more.classList.toggle("Location-click-more_info");
-  location_container.classList.toggle('Location-click-container');
   location_discription.classList.toggle('Location-click-discription');
 }
 
 const team_click = () => {
   arena.style.transition = "all 2s";
-  team.style.transition = "all 2s"
+  team_container.style.transition = "all 2s"
   game.style.transition = "all 2s";
-  team.classList.toggle("Team-click-team");
+  team_container.classList.toggle("Team-click-team");
   arena.classList.toggle("click-left");
   game.classList.toggle("click-right");
   team_more.classList.toggle("Team-click-more_info");
-  team_container.classList.toggle("Team-click-container");
   team_discription.classList.toggle('Team-click-discription');
-  location_discription.classList.toggle('Team-click-location-discription');
+  location_discription.classList.toggle('remove-discription');
+}
+
+const game_click = () => {
+  arena.style.transition = "all 2s";
+  team.style.transition = "all 2s";
+  game_container.style.transition = "all 2s";
+  game_container.classList.toggle("Game-click-game");
+  arena.classList.toggle("click-left");
+  team.classList.toggle("click-left");
+  game_more.classList.toggle("Game-click-more_info");
+  game_discritpion.classList.toggle("Team-click-discription");
+  location_discription.classList.toggle('remove-discription');
+  team_discription.classList.toggle('remove-discription');
 }
 
 arena.addEventListener("click", arena_click);
 team.addEventListener("click", team_click);
+game.addEventListener("click", game_click);

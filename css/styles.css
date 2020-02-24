@@ -28,19 +28,19 @@ div.Moving_images{
   flex-direction: row;
   justify-content: space-around;
   width: auto;
-  padding-left: 9%;
+  padding-left: 13%;
 }
 
-.Location_Navigation{
+.Navigation_Container{
   transition: filter 0.5s;
   position: relative;
-  display: block;
+  display: flex;
   width: 100%;
 }
 
 .navImage{
   transition: filter 0.5s;
-  width: 70%;
+  width: 90%;
   filter: grayscale(100%);
 }
 
@@ -54,6 +54,8 @@ div.Moving_images{
   white-space: nowrap;
   padding: 2%;
 }
+
+
 
 .discription{
   margin-left: 2%;
@@ -81,6 +83,11 @@ div.Moving_images{
   transform: translate(-400%);
 }
 
+/*Discriptions being removed*/
+.remove-discription{
+  display: none;
+}
+
 
 /*Transitions on Location click*/
 .Location-click-location{
@@ -96,10 +103,6 @@ div.Moving_images{
   color: white;
 }
 
-.Location-click-container{
-  display: flex;
-}
-
 .Location-click-discription{
   transition: opacity 1.5s;
   transition-delay: 0.3s;
@@ -110,7 +113,7 @@ div.Moving_images{
 /*Transitions on Team click*/
 .Team-click-team{
   filter: grayscale(0%);
-  transform: translate(-135%);
+  transform: translate(-105%);
 }
 
 .Team-click-more_info{
@@ -121,9 +124,25 @@ div.Moving_images{
   color: white;
 }
 
-.Team-click-container{
-  display: flex;
-  justify-content: flex-start;
+.Team-click-discription{
+  transition: opacity 1.5s;
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+
+
+/*Transitions on Team click*/
+.Game-click-game{
+  filter: grayscale(0%);
+  transform: translate(-200%);
+}
+
+.Game-click-more_info{
+  transition: opacity 1.5s;
+  transition-delay: 2s;
+  opacity: 1;
+  background-color: black;
+  color: white;
 }
 
 .Team-click-discription{
@@ -132,16 +151,12 @@ div.Moving_images{
   opacity: 1;
 }
 
-.Team-click-location-discription{
-  display: none;
-}
-
 /* TABLET STYLES */
 
 @media screen and (min-width: 500px) {
 
   /* applies to screens wider than 499px */
-
+/*
   body {
     margin: auto;
     text-align: center;
@@ -153,7 +168,7 @@ div.Moving_images{
     justify-content: space-evenly;
     flex-wrap: nowrap;
   }
-}
+}*/
 
 
 
@@ -163,6 +178,7 @@ div.Moving_images{
 
   /* applies to screens wider than 999px */
 
+/*
   body {
     margin: auto;
     text-align: center;
@@ -174,4 +190,4 @@ div.Moving_images{
     justify-content: space-evenly;
     flex-wrap: nowrap;
   }
-}
+}*/
