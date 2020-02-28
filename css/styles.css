@@ -3,8 +3,17 @@
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
 
-body {
-  margin: auto;
+body{
+  margin-left: auto;
+  background: url("../images/Dota-2-Logo.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 300%;
+
+
+  /*Ask about horizontal scrolling*/
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1{
@@ -14,13 +23,6 @@ h1{
   margin-top: 0%;
   margin-bottom: 8%;
   text-align: center;
-}
-
-body{
-  background: url("../images/Dota-2-Logo.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 300%;
 }
 
 div.Moving_images{
@@ -120,6 +122,30 @@ div.Moving_images{
 }
 
 
+
+/*Styles for side menu*/
+.side_menu{
+  background-color:	#484848;
+  width: 103%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  }
+
+.side_menu_image{
+  display: none;
+}
+
+.side_menu_nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+.side_menu_item{
+  color: black;
+  text-decoration: none;
+}
+
+
 /* TABLET STYLES */
 
 @media screen and (min-width: 500px) {
@@ -136,8 +162,8 @@ div.Moving_images{
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: nowrap;
-  }
-}*/
+  }*/
+}
 
 
 
@@ -158,5 +184,5 @@ div.Moving_images{
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: nowrap;
-  }
-}*/
+  }*/
+}
