@@ -6,6 +6,7 @@
 body{
   margin-left: auto;
   background-color: grey;
+  margin-bottom: 0%;
 
   /*Ask about horizontal scrolling*/
   max-width: 100%;
@@ -69,6 +70,18 @@ div.Moving_images{
 
 .discription_text{
   opacity: 0;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  width: 103%;
+  padding-bottom: 0%;
+}
+
+.footer-text{
+  font-size: 70%;
+  padding-top: 1%;
 }
 
 
