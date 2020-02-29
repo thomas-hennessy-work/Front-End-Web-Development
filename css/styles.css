@@ -197,19 +197,29 @@ h2{
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.team-standing-row{
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
 th{
   border: 1px solid black;
+  border-collapse: inherit;
 }
 
 .team-logo{
-  width: 40%;
+  width: 60%;
 }
 
 .team-member{
   display: flex;
   flex-direction: column;
+  height:20%;
 }
 
 /* TABLET STYLES */
