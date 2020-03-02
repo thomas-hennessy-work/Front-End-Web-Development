@@ -100,8 +100,8 @@ footer{
 
 .click-left{
   transition: transform;
-  position: absolute;
   transform: translate(-400%);
+  margin: 0px;
 }
 
 /*Discription appearing*/
@@ -132,20 +132,18 @@ footer{
 
 /*Transitions when clicking on an item*/
 .Location-click-location{
-  transition: filter;
   filter: grayscale(0%);
-  transition: transform;
   transform: translate(-35%);
 }
 
 .Team-click-team{
   filter: grayscale(0%);
-  transform: translate(-95%);
+  transform: translate(-35%);
 }
 
 .Game-click-game{
   filter: grayscale(0%);
-  transform: translate(-195%);
+  transform: translate(-35%);
 }
 
 
