@@ -6,30 +6,30 @@ const team = document.getElementById('team');
 const game = document.getElementById('game');
 
 //ellements related to location
-const location_more = document.getElementById('Location_more');
-const location_container = document.getElementById('Location_container')
-const location_discription = document.getElementById('Location_discription');
+const arena_more = document.getElementById('Location-more');
+const arena_container = document.getElementById('Location-container')
+const arena_discription = document.getElementById('Location-discription');
 
 //Ellements related to team
-const team_more = document.getElementById('Team_more');
-const team_container = document.getElementById('Team_container')
-const team_discription = document.getElementById('Team_discription');
+const team_more = document.getElementById('Team-more');
+const team_container = document.getElementById('Team-container')
+const team_discription = document.getElementById('Team-discription');
 
 //Elements related to game
-const game_more = document.getElementById('Game_more');
-const game_container = document.getElementById('Game_container');
-const game_discritpion = document.getElementById('Game_discription');
+const game_more = document.getElementById('Game-more');
+const game_container = document.getElementById('Game-container');
+const game_discritpion = document.getElementById('Game-discription');
 
 const arena_click = () => {
   //ask how to put the transitions for both ways in to css
   team_container.style.transition = "all 2s";
   game_container.style.transition = "all 2s";
-  location_container.style.transition = "all 2s";
-  location_container.classList.toggle("image-click-image");
+  arena_container.style.transition = "all 2s";
+  arena_container.classList.toggle("image-click-image");
   team_container.classList.toggle("click-left");
   game_container.classList.toggle("click-left");
-  location_more.classList.toggle("more-info-appear");
-  location_discription.classList.toggle('appear-discription');
+  arena_more.classList.toggle("more-info-appear");
+  arena_discription.classList.toggle('appear-discription');
 }
 
 const team_click = () => {
@@ -38,10 +38,10 @@ const team_click = () => {
   game.style.transition = "all 2s";
   team_container.classList.toggle("image-click-image");
   arena.classList.toggle("click-left");
-  game.classList.toggle("click-right");
+  game.classList.toggle("click-left");
   team_more.classList.toggle("more-info-appear");
   team_discription.classList.toggle('appear-discription');
-  location_discription.classList.toggle('remove-discription');
+  arena_discription.classList.toggle('remove-discription');
 }
 
 const game_click = () => {
@@ -53,7 +53,7 @@ const game_click = () => {
   team.classList.toggle("click-left");
   game_more.classList.toggle("more-info-appear");
   game_discritpion.classList.toggle("appear-discription");
-  location_discription.classList.toggle('remove-discription');
+  arena_discription.classList.toggle('remove-discription');
   team_discription.classList.toggle('remove-discription');
 }
 

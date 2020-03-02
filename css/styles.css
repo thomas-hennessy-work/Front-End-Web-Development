@@ -3,15 +3,12 @@
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
 
+/*General styling applied to all pages*/
 body{
   margin-left: auto;
   margin-bottom: 0%;
   margin-right: 0%;
   background-color: #bdc3c7;
-
-  /*Ask about horizontal scrolling*/
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 h1{
@@ -32,7 +29,22 @@ h1{
   padding-top: 1%;
 }
 
-.Moving_images{
+footer{
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding-bottom: 0%;
+  margin-top: 5%;
+}
+
+.footer-text{
+  font-size: 70%;
+  padding-top: 1%;
+}
+
+
+/*Styles applied to the moving images on index*/
+.Moving-images{
   width: auto;
   margin-top: 8%;
   margin-left: 28%;
@@ -52,7 +64,7 @@ h1{
   filter: grayscale(0%);
 }
 
-.more_info{
+.more-info{
   height: 0%;
   opacity: 0;
   white-space: nowrap;
@@ -60,40 +72,22 @@ h1{
   font-size: 0px;
 }
 
-.discription_text{
+.discription-text{
   opacity: 0;
   margin-left: 2%;
   margin-right: 10%;
-}
-
-footer{
-  background-color: black;
-  color: white;
-  width: 100%;
-  padding-bottom: 0%;
-  margin-top: 5%;
-}
-
-.footer-text{
-  font-size: 70%;
-  padding-top: 1%;
 }
 
 
 /*  Styles used for when an icon has been clicked*/
 /*Item being effected - effect - item changing*/
 
-/*Images moving right*/
-.click-right{
-  transition: transform;
-  transform: translate(400%);
-}
-
 .click-left{
   transition: transform;
   transform: translate(-400%);
   margin: 0px;
 }
+
 
 /*Discription appearing and joining the image*/
 
@@ -104,10 +98,6 @@ footer{
   font-size: 16px;
 }
 
-
-/*Discriptions being removed*/
-.remove-discription{
-}
 
 /*Making the more information link appear*/
 .more-info-appear{
@@ -130,7 +120,7 @@ footer{
 
 
 /*Styles for side menu*/
-.side_menu{
+.side-menu{
   background-color:	#e74c3c;
   width: 100%;
   }
@@ -139,15 +129,17 @@ footer{
   background-color: #c0392b;
 }
 
-.side_menu_image{
+.side-menu-image{
   display: none;
 }
 
-.side_menu_nav{
+.side-menu-nav{
   display: flex;
   justify-content: space-around;
 }
 
+
+/*Styles for the text and images on the non-index pages*/
 .side-menu-item{
   color: black;
   text-decoration: none;
@@ -232,7 +224,7 @@ tr:nth-child(even){
 
 
 
-/*Styles for game page*/
+/*Styles for Youtube video on game page*/
 .trailer-video{
   width: 100%;
   padding-top: 8%;
