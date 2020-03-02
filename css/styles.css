@@ -33,17 +33,9 @@ h1{
 }
 
 .Moving_images{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
   width: auto;
   margin-top: 8%;
   margin-left: 28%;
-}
-
-.Navigation_Container{
-  transition: filter 0.5s;
-  position: relative;
 }
 
 .image-more-info{
@@ -109,12 +101,12 @@ footer{
   transition: opacity 1.5s;
   transition-delay: 0.3s;
   opacity: 1;
+  font-size: 16px;
 }
 
 
 /*Discriptions being removed*/
 .remove-discription{
-  display: none;
 }
 
 /*Making the more information link appear*/
