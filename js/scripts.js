@@ -15,6 +15,7 @@ const team_more = document.getElementById('Team_more');
 const team_container = document.getElementById('Team_container')
 const team_discription = document.getElementById('Team_discription');
 
+//Elements related to game
 const game_more = document.getElementById('Game_more');
 const game_container = document.getElementById('Game_container');
 const game_discritpion = document.getElementById('Game_discription');
@@ -24,7 +25,7 @@ const arena_click = () => {
   team_container.style.transition = "all 2s";
   game_container.style.transition = "all 2s";
   location_container.style.transition = "all 2s";
-  location_container.classList.toggle("Location-click-location");
+  location_container.classList.toggle("image-click-image");
   team_container.classList.toggle("click-left");
   game_container.classList.toggle("click-left");
   location_more.classList.toggle("more-info-appear");
@@ -35,7 +36,7 @@ const team_click = () => {
   arena.style.transition = "all 2s";
   team_container.style.transition = "all 2s"
   game.style.transition = "all 2s";
-  team_container.classList.toggle("Team-click-team");
+  team_container.classList.toggle("image-click-image");
   arena.classList.toggle("click-left");
   game.classList.toggle("click-right");
   team_more.classList.toggle("more-info-appear");
@@ -47,7 +48,7 @@ const game_click = () => {
   arena.style.transition = "all 2s";
   team.style.transition = "all 2s";
   game_container.style.transition = "all 2s";
-  game_container.classList.toggle("Game-click-game");
+  game_container.classList.toggle("image-click-image");
   arena.classList.toggle("click-left");
   team.classList.toggle("click-left");
   game_more.classList.toggle("more-info-appear");

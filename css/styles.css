@@ -44,8 +44,10 @@ h1{
 .Navigation_Container{
   transition: filter 0.5s;
   position: relative;
+}
+
+.image-more-info{
   display: flex;
-  margin-bottom: 5%;
 }
 
 .navImage{
@@ -66,13 +68,10 @@ h1{
   font-size: 0px;
 }
 
-.discription{
-  margin-left: 2%;
-  margin-right: 10%;
-}
-
 .discription_text{
   opacity: 0;
+  margin-left: 2%;
+  margin-right: 10%;
 }
 
 footer{
@@ -104,7 +103,8 @@ footer{
   margin: 0px;
 }
 
-/*Discription appearing*/
+/*Discription appearing and joining the image*/
+
 .appear-discription{
   transition: opacity 1.5s;
   transition-delay: 0.3s;
@@ -130,22 +130,11 @@ footer{
 }
 
 
-/*Transitions when clicking on an item*/
-.Location-click-location{
+/*Transition when clicking on an image*/
+.image-click-image{
   filter: grayscale(0%);
   transform: translate(-35%);
 }
-
-.Team-click-team{
-  filter: grayscale(0%);
-  transform: translate(-35%);
-}
-
-.Game-click-game{
-  filter: grayscale(0%);
-  transform: translate(-35%);
-}
-
 
 
 /*Styles for side menu*/
