@@ -6,7 +6,7 @@ const team = document.getElementById('team');
 const game = document.getElementById('game');
 
 //ellements related to location
-const arena_more = document.getElementById('Location_more');
+const location_more = document.getElementById('Location_more');
 const location_container = document.getElementById('Location_container')
 const location_discription = document.getElementById('Location_discription');
 
@@ -23,10 +23,11 @@ const arena_click = () => {
   //ask how to put the transitions for both ways in to css
   team.style.transition = "all 2s";
   game.style.transition = "all 2s";
-  arena.classList.toggle("Location-click-location");
-  team.classList.toggle("click-right");
-  game.classList.toggle("click-right");
-  arena_more.classList.toggle("more-info-appear");
+  location_container.style.transition = "all 2s";
+  location_container.classList.toggle("Location-click-location");
+  team.classList.toggle("click-left");
+  game.classList.toggle("click-left");
+  location_more.classList.toggle("more-info-appear");
   location_discription.classList.toggle('appear-discription');
 }
 
