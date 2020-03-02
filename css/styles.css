@@ -148,8 +148,6 @@ footer{
 .side_menu{
   background-color:	#e74c3c;
   width: 100%;
-  padding-top: 2%;
-  padding-bottom: 2%;
   }
 
 .side_menu_image{
@@ -165,6 +163,9 @@ footer{
   color: black;
   text-decoration: none;
   font-weight: bold;
+  width: 34%;
+  text-align: center;
+  padding: 3%;
 }
 
 .text-group-container{
@@ -198,31 +199,40 @@ h2{
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-
-  border: 1px solid black;
   border-collapse: collapse;
-}
-
-.team-row{
 }
 
 th{
-  border: 1px solid black;
-  border-collapse: inherit;
   border-collapse: collapse;
 }
 
+th:nth-child(even){
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.team-member:nth-child(even){
+  border: none;
+}
+
+#top-row{
+  border-bottom: 1px solid black;
+}
+
 .team-logo{
-  width: 60%;
+  width: 40%;
 }
 
 .team-member{
   display: flex;
   flex-direction: column;
   border-collapse: collapse;
-  border-top: hidden;
-  border-left: hidden;
-  border-right: hidden;
+  border: none;
+}
+
+tr:nth-child(even){
+  background-color: white;
+  box-shadow: 3px 3px 3px black;
 }
 
 #last-player{
