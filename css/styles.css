@@ -150,6 +150,10 @@ footer{
   width: 100%;
   }
 
+  .side-menu-item:nth-child(even){
+    background-color: #c0392b;
+  }
+
 .side_menu_image{
   display: none;
 }
@@ -194,12 +198,14 @@ h2{
   margin-right: auto;
 }
 
-/*Team standing table styles*/
+
+/*Teams table styles*/
 .team-table{
   margin-left: auto;
   margin-right: auto;
   width: 90%;
   border-collapse: collapse;
+  margin-top: 4%;
 }
 
 th{
@@ -237,6 +243,15 @@ tr:nth-child(even){
 
 #last-player{
   border-bottom: hidden;
+}
+
+
+
+/*Styles for game page*/
+.trailer-video{
+  width: 100%;
+  padding-top: 8%;
+  border: hidden;
 }
 
 /* TABLET STYLES */
