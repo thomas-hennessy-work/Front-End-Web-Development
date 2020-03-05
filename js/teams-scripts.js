@@ -26,13 +26,19 @@ Promise.all([
   fetch('https://api.opendota.com/api/teams/2586976'),
   fetch('https://api.opendota.com/api/teams/2586976/players')
 ])
-  .then(function (responses) {
+  .then (responses => {
     return responses.map(function (response) {
       return response.json();
     });
-  }).then(function (data) {
-    console.log(data);
-  }).catch(function (error) {
+  }).then (data => {
+    let [teams,players] = data;
+    console.log(teams);
+    console.log(players);
+
+    activePlayers = players.filter(item => {return item.is_current_team_member == true});
+
+    console.log(activePlayers);
+  }).catch(error => {
     console.log(error);
   });
 
