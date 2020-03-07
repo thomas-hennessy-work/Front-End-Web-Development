@@ -1,48 +1,55 @@
-// "use strict";
+"use strict";
+
+// Promise.all([
+//   fetch('https://api.opendota.com/api/teams/2586976'),
+//   fetch('https://api.opendota.com/api/teams/2586976/players')
+// ])
+//   .then (responses => {
+//     return responses.map(async function (response) {
+//       console.log(await response.json());
+//     });
+//   }).then (data => {
+//     let [teams,players] = data;
+//     console.log(teams);
+//     console.log(players);
 //
-// var Request = new XMLHttpRequest();
 //
-// Request.open('GET', 'https://api.opendota.com/api/teams/2586976', true);
-// Request.onload = function(){
-//   var ogData = JSON.parse(this.response);
-//
-//   if(Request.status >= 200 && Request.status < 400){
-//     console.log(ogData.tag);
-//     console.log(ogData.team_id);
-//     console.log(ogData.wins);
-//     console.log(ogData.losses);
-//   }
-//   else{
-//     console.log('error');
-//   }
-//
-// }
-// Request.send();
+//     // activePlayers = players.filter(item => {return item.is_current_team_member == true});
+//     //
+//     // console.log(activePlayers);
+//   }).catch(error => {
+//     console.log(error);
+//   });
 
+fetch('https://api.opendota.com/api/teams/2586976').then(
+  function(response_OG){
+    return response_OG.json();
+  }
+).then(function(teams){
+  console.log(teams.name);
+})
 
-
-//Able to call multiple API's
-Promise.all([
-  fetch('https://api.opendota.com/api/teams/2586976'),
-  fetch('https://api.opendota.com/api/teams/2586976/players')
-])
-  .then (responses => {
-    return responses.map(function (response) {
-      return response.json();
-    });
-  }).then (data => {
-    let [teams,players] = data;
-    console.log(teams);
-    console.log(players);
-
-    activePlayers = players.filter(item => {return item.is_current_team_member == true});
-
-    console.log(activePlayers);
-  }).catch(error => {
-    console.log(error);
+fetch('https://api.opendota.com/api/teams/2586976/players').then(
+  function(response_OG_players){
+    return response_OG_players.json();
+  }
+).then(function(players){
+  players.forEach(function(item, index) {
+    console.log(item.name);
   });
+})
 
-
+// async function fetchData(url = '',){
+//   const response = await fetch(url, {
+//     method: 'get',
+//   });
+//   return await responce.json();
+// }
+//
+// fetch('https://api.opendota.com/api/teams/2586976')
+//   .then((team) => {
+//     console.log(team);
+//   });
 
 // Request.open('GET', 'https://api.opendota.com/api/teams/2586976/players', true);
 // Request.onload = function(){
