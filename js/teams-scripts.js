@@ -26,7 +26,7 @@ fetch('https://api.opendota.com/api/teams/2586976').then(
     return response_OG.json();
   }
 ).then(function(teams){
-  console.log(teams.name);
+  console.log(teams);
 })
 
 fetch('https://api.opendota.com/api/teams/2586976/players').then(
@@ -34,9 +34,8 @@ fetch('https://api.opendota.com/api/teams/2586976/players').then(
     return response_OG_players.json();
   }
 ).then(function(players){
-  players.forEach(function(item, index) {
-    console.log(item.name);
-  });
+    const activeOG = players.filter(players => players.is_current_team_member == true);
+    console.log(activeOG);
 })
 
 // async function fetchData(url = '',){
