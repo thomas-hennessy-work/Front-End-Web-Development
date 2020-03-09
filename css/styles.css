@@ -223,6 +223,7 @@ tr:nth-child(even){
 /*Styles for Youtube video on game page*/
 .trailer-video{
   width: 100%;
+  height: auto;
   padding-top: 8%;
   border: hidden;
 }
@@ -231,19 +232,50 @@ tr:nth-child(even){
 
 @media screen and (min-width: 500px) {
 
-  /* applies to screens wider than 499px */
-/*
-  body {
-    margin: auto;
-    text-align: center;
+  .informative-text{
+    font-size: 200%;
   }
 
-  .navigation-menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-  }*/
+  .discription-text{
+    font-size: 200%;
+  }
+
+  .more-info-appear{
+    font-size: 200%;
+  }
+
+  .side-menu-item{
+    font-size: 150%;
+  }
+
+  h2{
+    font-size: 200%;
+  }
+
+  .informative-image{
+    width: 95%;
+  }
+
+  #top-row{
+    font-size: 150%;
+  }
+
+  .team-member{
+    font-size: 150%;
+  }
+
+  .team-name{
+    font-size: 200%;
+  }
+
+  .trailer-video{
+    height: 600px;
+  }
+
+  .footer-text{
+    font-size: 100%;
+  }
+
 }
 
 
@@ -252,18 +284,12 @@ tr:nth-child(even){
 
 @media screen and (min-width: 1000px) {
 
-  /* applies to screens wider than 999px */
-
-/*
-  body {
-    margin: auto;
-    text-align: center;
+  .Moving-images{
+    display: flex;
+    margin-left: 10%;
   }
 
-  .navigation-menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-  }*/
+  .navImage{
+    width: 80%;
+  }
 }
