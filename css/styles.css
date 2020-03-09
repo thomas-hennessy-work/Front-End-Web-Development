@@ -76,6 +76,8 @@ footer{
   opacity: 0;
   margin-left: 2%;
   margin-right: 10%;
+  font-size: 100%;
+  width: 115%;
 }
 
 
@@ -95,7 +97,6 @@ footer{
   transition: opacity 1.5s;
   transition-delay: 0.3s;
   opacity: 1;
-  font-size: 16px;
 }
 
 
