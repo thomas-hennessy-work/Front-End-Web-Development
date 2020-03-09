@@ -218,11 +218,6 @@ tr:nth-child(even){
   box-shadow: 3px 3px 3px black;
 }
 
-#last-player{
-  border-bottom: hidden;
-}
-
-
 
 /*Styles for Youtube video on game page*/
 .trailer-video{
