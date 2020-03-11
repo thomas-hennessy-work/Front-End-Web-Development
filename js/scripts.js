@@ -25,7 +25,7 @@ const arena_click = () => {
   team_container.style.transition = "all 2s";
   game_container.style.transition = "all 2s";
   arena_container.style.transition = "all 2s";
-  arena_container.classList.toggle("image-click-image");
+  arena_container.classList.toggle("image-click-arena");
   team_container.classList.toggle("click-left");
   game_container.classList.toggle("click-left");
   arena_more.classList.toggle("more-info-appear");
@@ -36,7 +36,7 @@ const team_click = () => {
   arena.style.transition = "all 2s";
   team_container.style.transition = "all 2s"
   game.style.transition = "all 2s";
-  team_container.classList.toggle("image-click-image");
+  team_container.classList.toggle("image-click-team");
   arena.classList.toggle("click-left");
   game.classList.toggle("click-left");
   team_more.classList.toggle("more-info-appear");
@@ -48,7 +48,7 @@ const game_click = () => {
   arena.style.transition = "all 2s";
   team.style.transition = "all 2s";
   game_container.style.transition = "all 2s";
-  game_container.classList.toggle("image-click-image");
+  game_container.classList.toggle("image-click-game");
   arena.classList.toggle("click-left");
   team.classList.toggle("click-left");
   game_more.classList.toggle("more-info-appear");

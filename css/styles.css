@@ -114,11 +114,20 @@ footer{
 
 
 /*Transition when clicking on an image*/
-.image-click-image{
+.image-click-arena{
   filter: grayscale(0%);
   transform: translate(-35%);
 }
 
+.image-click-team{
+  filter: grayscale(0%);
+  transform: translate(-35%);
+}
+
+.image-click-game{
+  filter: grayscale(0%);
+  transform: translate(-35%);
+}
 
 /*Styles for side menu*/
 .side-menu{
@@ -284,12 +293,46 @@ tr:nth-child(even){
 
 @media screen and (min-width: 1000px) {
 
+  h1{
+    font-size: 500%;
+  }
+
+  .informative-text{
+    font-size: 300%;
+  }
+
   .Moving-images{
     display: flex;
-    margin-left: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 
   .navImage{
-    width: 80%;
+    width: 88%;
+  }
+
+  .more-info{
+    font-size: 280%;
+  }
+
+  .discription-text{
+    width: 270%;
+    font-size: 300%;
+  }
+
+  .image-click-arena{
+    transform: translate(-0%);
+  }
+
+  .image-click-team{
+    transform: translate(-97%);
+  }
+
+  .image-click-game{
+    transform: translate(-192%);
+  }
+
+  .footer-text{
+    font-size: 150%;
   }
 }
