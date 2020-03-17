@@ -373,7 +373,7 @@ tr:nth-child(even){
 
   .text-group-container:nth-of-type(even){
     flex-direction: row-reverse;
-    background-color: #DF5649;
+    background: linear-gradient(#DF5649, #bdc3c7);
     background-clip: padding-box;
   }
 
