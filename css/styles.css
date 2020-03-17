@@ -159,7 +159,7 @@ footer{
   padding: 3%;
 }
 
-h2{
+.informative-header{
   text-align: left;
   padding-left: 6%;
 }
@@ -251,7 +251,7 @@ tr:nth-child(even){
     font-size: 150%;
   }
 
-  h2{
+  .informative-header{
     font-size: 300%;
   }
 
@@ -361,11 +361,20 @@ tr:nth-child(even){
     padding-left: 2%;
   }
 
-  h2:nth-of-type(odd){
+  .team-header{
+    font-size: 300%;
+  }
+
+  .informative-header:nth-of-type(odd){
     background-color: #DF5649;
     background-clip: padding-box;
     margin-bottom: 0%;
-    }
+  }
+
+  .team-table-container{
+    background: linear-gradient(#DF5649, #bdc3c7);
+    background-clip: padding-box;
+  }
 
   .text-group-container{
     padding-bottom: 5%;
