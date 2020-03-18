@@ -139,10 +139,6 @@ footer{
   background-color: #c0392b;
 }
 
-.side-menu-image{
-  display: none;
-}
-
 .side-menu-nav{
   display: flex;
   justify-content: space-around;
@@ -342,6 +338,32 @@ tr:nth-child(even){
     width: 270%;
     font-size: 300%;
     padding-bottom: 0%;
+  }
+
+  .side-menu-nav{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    position: fixed;
+    background-color: #DF5649;
+    top: 0;
+    left: 0;
+    width: 11%;
+  }
+
+  .side-menu-item{
+    width: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  .side-menu-item:hover{
+    transition: background-color 2s;
+    background-color: #c0392b;
+  }
+
+  .side-menu-item:nth-child(even) {
+    background-color: #DF5649;
   }
 
   .text-group-container{
