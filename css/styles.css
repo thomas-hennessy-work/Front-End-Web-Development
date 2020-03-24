@@ -80,6 +80,11 @@ footer{
   width: 115%;
 }
 
+.learn-more{
+  text-align: center;
+  font size 100%;
+}
+
 
 /*  Styles used for when an icon has been clicked*/
 /*Item being effected - effect - item changing*/
@@ -175,6 +180,15 @@ footer{
   margin-right: auto;
 }
 
+.team-header{
+  text-align: center;
+}
+
+.team-description{
+  font-size: 120%;
+  text-align: center;
+}
+
 
 /*Teams table styles*/
 .team-table{
@@ -231,6 +245,10 @@ tr:nth-child(even){
 
 @media screen and (min-width: 500px) {
 
+  .learn-more{
+    font-size: 200%;
+  }
+
   .informative-text{
     font-size: 200%;
   }
@@ -253,6 +271,14 @@ tr:nth-child(even){
 
   .informative-image{
     width: 95%;
+  }
+
+  .team-header{
+    font-size: 300%;
+  }
+
+  .team-description{
+    font-size: 200%;
   }
 
   #top-row{
@@ -291,9 +317,13 @@ tr:nth-child(even){
     font-size: 300%;
   }
 
+  .learn-more{
+
+  }
+
   .Moving-images{
     display: flex;
-    margin-left: 5%;
+    margin-left: 15%;
   }
 
   .Navigation-Container{
@@ -301,7 +331,7 @@ tr:nth-child(even){
   }
 
   .image-more-info{
-    width: 92%;
+    width: 70%;
   }
 
   .navImage{
@@ -315,11 +345,11 @@ tr:nth-child(even){
   }
 
   .click-left{
-    transform: translate(-500%);
+    transform: translate(-700%);
   }
 
   .image-click-arena{
-    transform: translate(-0%);
+    transform: translate(-10%);
   }
 
   .image-click-team{
@@ -327,7 +357,7 @@ tr:nth-child(even){
   }
 
   .image-click-game{
-    transform: translate(-192%);
+    transform: translate(-170%);
   }
 
   .more-info-appear{
@@ -385,6 +415,11 @@ tr:nth-child(even){
 
   .team-header{
     font-size: 300%;
+  }
+
+  .team-member{
+    font-size: 200%;
+    height: 20%;
   }
 
   .informative-header:nth-of-type(odd){
