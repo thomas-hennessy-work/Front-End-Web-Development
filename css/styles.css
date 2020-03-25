@@ -44,6 +44,11 @@ footer{
 
 
 /*Styles applied to the moving images on index*/
+
+.Navigation-Container{
+  transition: transform 2s;
+}
+
 .Moving-images{
   width: auto;
   margin-top: 8%;
@@ -55,12 +60,12 @@ footer{
 }
 
 .navImage{
-  transition: filter 0.5s;
   width: 60%;
   filter: grayscale(100%);
 }
 
 .navImage:hover{
+  transition: filter 1s;
   filter: grayscale(0%);
 }
 
@@ -90,7 +95,7 @@ footer{
 /*Item being effected - effect - item changing*/
 
 .click-left{
-  transition: transform;
+  transition: transform 2s;
   transform: translate(-400%);
   margin: 0px;
 }
@@ -120,18 +125,20 @@ footer{
 
 /*Transition when clicking on an image*/
 .image-click-arena{
-  filter: grayscale(0%);
   transform: translate(-35%);
 }
 
 .image-click-team{
-  filter: grayscale(0%);
   transform: translate(-35%);
 }
 
 .image-click-game{
-  filter: grayscale(0%);
   transform: translate(-35%);
+}
+
+.remove-grayscale{
+  transition: filter 2s;
+  filter: grayscale(0%);
 }
 
 /*Styles for side menu*/
@@ -317,10 +324,6 @@ tr:nth-child(even){
     font-size: 300%;
   }
 
-  .learn-more{
-
-  }
-
   .Moving-images{
     display: flex;
     margin-left: 15%;
@@ -331,11 +334,11 @@ tr:nth-child(even){
   }
 
   .image-more-info{
-    width: 70%;
+    width: 60%;
   }
 
   .navImage{
-    width: inherit;
+    width: 100%;
   }
 
   .discription-text{
@@ -345,19 +348,19 @@ tr:nth-child(even){
   }
 
   .click-left{
-    transform: translate(-700%);
+    transform: translate(-200vw);
   }
 
   .image-click-arena{
-    transform: translate(-10%);
+    transform: translate(-9vw);
   }
 
   .image-click-team{
-    transform: translate(-97%);
+    transform: translate(-33vw);
   }
 
   .image-click-game{
-    transform: translate(-170%);
+    transform: translate(-60vw);
   }
 
   .more-info-appear{

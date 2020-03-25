@@ -21,11 +21,8 @@ const game_container = document.getElementById('Game-container');
 const game_discritpion = document.getElementById('Game-discription');
 
 const arena_click = () => {
-  //ask how to put the transitions for both ways in to css
-  team_container.style.transition = "all 2s";
-  game_container.style.transition = "all 2s";
-  arena_container.style.transition = "all 2s";
   arena_container.classList.toggle("image-click-arena");
+  arena.classList.toggle("remove-grayscale");
   team_container.classList.toggle("click-left");
   game_container.classList.toggle("click-left");
   arena_more.classList.toggle("more-info-appear");
@@ -33,24 +30,20 @@ const arena_click = () => {
 }
 
 const team_click = () => {
-  arena.style.transition = "all 2s";
-  team_container.style.transition = "all 2s"
-  game.style.transition = "all 2s";
   team_container.classList.toggle("image-click-team");
-  arena.classList.toggle("click-left");
-  game.classList.toggle("click-left");
+  team.classList.toggle("remove-grayscale");
+  arena_container.classList.toggle("click-left");
+  game_container.classList.toggle("click-left");
   team_more.classList.toggle("more-info-appear");
   team_discription.classList.toggle('appear-discription');
   arena_discription.classList.toggle('remove-discription');
 }
 
 const game_click = () => {
-  arena.style.transition = "all 2s";
-  team.style.transition = "all 2s";
-  game_container.style.transition = "all 2s";
   game_container.classList.toggle("image-click-game");
-  arena.classList.toggle("click-left");
-  team.classList.toggle("click-left");
+  game.classList.toggle("remove-grayscale");
+  arena_container.classList.toggle("click-left");
+  team_container.classList.toggle("click-left");
   game_more.classList.toggle("more-info-appear");
   game_discritpion.classList.toggle("appear-discription");
   arena_discription.classList.toggle('remove-discription');
