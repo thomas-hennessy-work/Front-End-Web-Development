@@ -42,3 +42,7 @@ The following websites were the main sources of information used whilst developi
 W3Schools: [https://www.w3schools.com/](https://www.w3schools.com/)
 CSS-Tricks: [https://css-tricks.com/](https://css-tricks.com/)
 Mozilla developer network: [https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/)
+
+# Validator errors
+
+On the teams page, there are errors relating to the team page. This is due to the team members tag collumn containing 5 rows within a cell, one row for each member of the team. Additionaly, img tags do not have any references to images. This is due to the image reference being provided by an API call, so any images referenced are un-necacery.
