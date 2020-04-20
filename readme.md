@@ -45,4 +45,4 @@ Mozilla developer network: [https://developer.mozilla.org/en-US/](https://develo
 
 # Validator errors
 
-On the teams page, there are errors relating to the team page. This is due to the team members tag collumn containing 5 rows within a cell, one row for each member of the team. Additionaly, img tags do not have any references to images. This is due to the image reference being provided by an API call, so any images referenced are un-necacery.
+On the teams page, there are errors relating to the team table. This is due to the team members tag collumn containing 5 rows within a cell, one row for each member of the team. Additionaly, img tags do not have any references to images. This is due to the image reference being provided by an API call, so any images referenced are un-necacery.
